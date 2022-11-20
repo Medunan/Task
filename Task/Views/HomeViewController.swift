@@ -83,32 +83,32 @@ extension HomeViewController {
 
 
 
-import SwiftUI
-
-struct UIViewControllerPreview<ViewController: UIViewController>: UIViewControllerRepresentable {
-
-    func updateUIViewController(_ uiViewController: ViewController, context: Context) {
-    }
-    let viewController: ViewController
-    init(_ builder: @escaping () -> ViewController) {
-        viewController = builder()
-    }
-    // MARK: - UIViewControllerRepresentable
-
-    func makeUIViewController(context: Context) -> ViewController {
-        viewController
-    }
-}
-
-struct BestInClassPreviews_Previews: PreviewProvider {
-    static var previews: some View {
-        UIViewControllerPreview {
-            // Return whatever controller you want to preview
-            let vc = HomeViewController()
-            return vc
-        }
-    }
-}
+//import SwiftUI
+//
+//struct UIViewControllerPreview<ViewController: UIViewController>: UIViewControllerRepresentable {
+//
+//    func updateUIViewController(_ uiViewController: ViewController, context: Context) {
+//    }
+//    let viewController: ViewController
+//    init(_ builder: @escaping () -> ViewController) {
+//        viewController = builder()
+//    }
+//    // MARK: - UIViewControllerRepresentable
+//
+//    func makeUIViewController(context: Context) -> ViewController {
+//        viewController
+//    }
+//}
+//
+//struct BestInClassPreviews_Previews: PreviewProvider {
+//    static var previews: some View {
+//        UIViewControllerPreview {
+//            // Return whatever controller you want to preview
+//            let vc = HomeViewController()
+//            return vc
+//        }
+//    }
+//}
 
 
 
